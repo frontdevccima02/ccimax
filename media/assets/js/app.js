@@ -567,15 +567,14 @@ app.config(function($routeProvider) {
 		templateUrl: 'application/views/habitta/portto-blanco/home/homeslp_view.php'
 	})
 	
-	
-	/***** Vista General de SLP (a peticion de Charly ) diego*****/
-	.when('/portto_blancoslp', {
-		templateUrl: 'application/views/habitta/portto-blanco/home/homeslp_view.php',
-		controller: 'PorttoBlancoMainCtrl',
-		controllerAs: 'porttoBlanco'
-	})
 
-	/***** Tamul *****/
+	/********** Portto Blanco Bernal **********/
+
+	.when('/portto_blanco_bernal', {
+		templateUrl: 'application/views/habitta/portto-blanco/home/homeslp_view.php'
+	})
+	
+
 
 	/* Quote */
 
@@ -603,7 +602,29 @@ app.config(function($routeProvider) {
 		controllerAs: 'tamul'
 	})
 
-	/********** Veredas de Lira **********/
+	
+	/***** Tamul *****/
+	/***** Zafiro *****/
+
+	/* Quote */
+
+	.when('/Portto_Blanco-Bernal/Zafiro', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/zafiro/zafiro_quote.php',
+		controller: 'PBBZafiroQuoteCtrl',
+		controllerAs: 'zafiro'
+	})
+	.when('/Portto_Blanco-Bernal/Zafiro_1', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/zafiro/condos/zafiro_1_quote.php',
+		controller: 'PBBZafiroQuoteCtrl',
+		controllerAs: 'zafiro'
+	})
+	.when('/Portto_Blanco-Bernal/Zafiro_2', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/zafiro/condos/zafiro_2_quote.php',
+		controller: 'PBBZafiroQuoteCtrl',
+		controllerAs: 'zafiro'
+	})
+
+
 	
 	.when('/veredas_lira', {
 		templateUrl: 'application/views/habitta/veredas-lira/home/home_view.php'
@@ -11415,6 +11436,107 @@ app.controller('PBSLPTamulQuoteCtrl', function($scope, Inmovables, Moment) {
 	init();
 
 });
+
+app.controller('PBBZafiroQuoteCtrl', function($scope, Inmovables, Moment) {
+	
+	let zafiro = this;
+
+	zafiro.month = Moment.month();
+	zafiro.nextMonth = Moment.nextMonth();
+	zafiro.year = Moment.year();
+	
+	let inmovablesData = [];
+	zafiro.inmovablesClassList = [];
+	zafiro.propertyData = [];
+
+	zafiro.dialogDisplay = 'hide';
+
+	let discountPlan1 = .25;
+	let discountPlan2 = .20;
+
+	zafiro.showPropertyData = function(idCondominium, number) {
+
+		angular.forEach(inmovablesData.inmovables, function(row, key) {
+
+			if (row.number == number && row.idCondominium == idCondominium) {
+
+				for (let indexCondos = 0; indexCondos < inmovablesData.condos.length; indexCondos++) {
+
+					if (inmovablesData.inmovables[key].idCondominium == inmovablesData.condos[indexCondos].idCondominium) {
+
+						zafiro.propertyData.condominium = inmovablesData.condos[indexCondos].condominium;
+	
+						break;
+	
+					}
+	
+				}
+
+				if (row.property_class == 1) {
+					zafiro.propertyData.propertyClass = 'Nave industrial';
+					zafiro.costToBlock = '$30,000 MXN';
+				} else if (row.property_class == 2) {
+					zafiro.propertyData.propertyClass = 'Lote industrial';
+					zafiro.costToBlock = '$10,000 MXN';
+				} else {
+					zafiro.propertyData.propertyClass = 'Lote habitacional';
+					zafiro.costToBlock = '$10,000 MXN';
+				}
+				
+				for (let indexType = 0; indexType < inmovablesData.propertyTypes.length; indexType++) {
+
+					if (inmovablesData.inmovables[key].idPropertyType == inmovablesData.propertyTypes[indexType].idPropertyType) {
+
+						zafiro.propertyData.type = inmovablesData.propertyTypes[indexType].type;
+						zafiro.propertyData.cost_m2 = inmovablesData.propertyTypes[indexType].cost_m2;
+	
+						break;
+	
+					}
+	
+				}
+
+				if (inmovablesData.inmovables[key].cost_m2_increase != null) {
+					zafiro.propertyData.cost_m2 += zafiro.propertyData.cost_m2 * inmovablesData.inmovables[key].cost_m2_increase.value;
+				}
+
+				zafiro.propertyData.number = row.number;
+				zafiro.propertyData.area = row.area;
+				let total = zafiro.propertyData.cost_m2 * zafiro.propertyData.area;
+				zafiro.propertyData.total = total.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+				let totalDiscountPlan1 = total - (total * discountPlan1);
+				zafiro.propertyData.discountPlan1 = discountPlan1 * 100;
+				zafiro.propertyData.totalPlan1 = totalDiscountPlan1.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+				let totalDiscountPlan2 = total - (total * discountPlan2);
+				zafiro.propertyData.discountPlan2 = discountPlan2 * 100;
+				zafiro.propertyData.totalPlan2 = totalDiscountPlan2.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+				zafiro.openDialog();
+
+			}
+
+		});
+
+	}
+
+	zafiro.openDialog = function() {
+		zafiro.dialogDisplay = '';
+	}
+
+	zafiro.closeDialog = function() {
+		zafiro.dialogDisplay = 'hide';
+	}
+
+	let init = function() {
+		Inmovables.getInmovablesData(12, 21).then(function(response) {
+			inmovablesData = response;
+			zafiro.inmovablesClassList = Inmovables.generateInmovablesClassList(inmovablesData.inmovables);
+		});
+	}
+	init();
+
+});
+
+
 
 /********** Menu **********/
 

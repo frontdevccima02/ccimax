@@ -205,18 +205,6 @@
 					</div>
 
 					<div class="divider"></div>
-<!-- 
-					<div class="divider"></div>
-
-					<div class="p-20">
-						<h6 class="deep-purple-text futura-light">Compra en {{manglar.month}} y paga la primera
-							mensualidad hasta {{manglar.nextMonth}}</h6>
-						<p class="promo__description grey-text">*Pagando el 100% de enganche</p>
-						<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas
-							en {{manglar.month + ' ' + manglar.year}}</p>
-					</div>
-
-					<div class="divider"></div> -->
 
 					<a class="p-20">
 						<p class="blue-text futura-book">¡Apártalo ahora!</p>
@@ -2601,7 +2589,7 @@
 					<line class="cls-48" x1="339.41" y1="526.12" x2="247.51" y2="607.13" />
 				</g>
 			</g>
-			<g id="ISLA_C" data-name="ISLA C">
+			<g id="ISLA_C" data-name="ISLA C">z
 				<g id="C-23" class="property__active" ng-class="manglar.inmovablesClassList[101]" ng-click="manglar.showPropertyData(49, '23')">
 					<polyline id="C-L23" class="property pb-sprite-1"
 						points="686.6 1592.05 686.6 1403.36 706.21 1425.16 712.19 1430.73 718.82 1435.51 725.99 1439.41 733.59 1442.37 741.5 1444.34 749.34 1445.28 786.75 1556.46 780.15 1558.74 733.3 1575.17 686.6 1592.05" />
