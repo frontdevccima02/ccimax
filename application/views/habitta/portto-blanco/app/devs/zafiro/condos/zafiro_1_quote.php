@@ -163,7 +163,7 @@
 
 				<div class="p-20 grey lighten-5">
 					<div class="p-5">
-						<h6 class="futura-med">Portto Blanco {{ zafiro.propertyData.condominium }}</h6>
+						<h6 class="futura-med">Portto Blanco Bernal {{ zafiro.propertyData.condominium }}</h6>
 					</div>
 					<div class="p-5">
 						<h6 class="futura-light">Número {{ zafiro.propertyData.number }}</h6>
@@ -209,7 +209,7 @@
 
 					<div class="p-20">
 						<h6 class="deep-purple-text futura-light">Compra en {{ zafiro.month }} y paga la primera
-							mensualidad hasta {{ zafiro.nextMonth }}</h6>
+							mensualidad hasta Noviembre</h6>
 						<p class="promo__description grey-text">*Pagando el 100% de enganche</p>
 						<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas
 							en {{ zafiro.month + ' ' + zafiro.year }}</p>
@@ -219,7 +219,7 @@
 
 					<a class="p-20">
 						<p class="blue-text futura-book">¡Apártalo ahora!</p>
-						<p class="green-text">Con tan solo $10,000 MXN</p>
+						<p class="green-text">Con tan solo $5,000 MXN</p>
 					</a>
 				</div>
 
@@ -375,7 +375,7 @@
 			</g>
 			<g id="BASE">
 				<image style="overflow:visible;enable-background:new    ;" width="1366" height="1372"
-					xlink:href="media/assets/img/habitta/portto-blanco/app/devs/zafiro/condos/BASE-zafiro-1.jpg">
+					xlink:href="media/assets/img/habitta/portto-blanco/app/devs/zafiro/condos/zafiro_1.jpg">
 				</image>
 			</g>
 			<g id="A-01_2_" class="property__active" ng-class="zafiro.inmovablesClassList[0]" ng-click="zafiro.showPropertyData(51, '1')">
@@ -1025,7 +1025,7 @@
 				<text transform="matrix(0.9988 4.884981e-02 -4.884981e-02 0.9988 86.529 952.3902)"
 					class="st5 st6 st3">28</text>
 			</g>
-			<g id="A-29_2_" class="property__active" ng-class="zafiro.inmovablesClassList[28]" ng-click="zafiro.showPropertyData(51, '329')">
+			<g id="A-29_2_" class="property__active" ng-class="zafiro.inmovablesClassList[28]" ng-click="zafiro.showPropertyData(51, '29')">
 				<polyline id="A-L29_2_" class="property pb-sprite-1"
 					points="18.4,1044.8 21.3,982.8 159,989.3 156.1,1051.3 18.4,1044.8 	" />
 				<text transform="matrix(4.884981e-02 -0.9988 0.9988 4.884981e-02 153.8855 1029.6311)">
@@ -2854,7 +2854,7 @@
 				</text>
 				<text transform="matrix(0.866 -0.5 0.5 0.866 766.1738 449.617)" class="st5 st6 st3">104</text>
 			</g>
-			<g id="F-105" class="property__active" ng-class="zafiro.inmovablesClassList[104]" ng-click="zafiro.showPropertyData(51, '107')">
+			<g id="F-105" class="property__active" ng-class="zafiro.inmovablesClassList[104]" ng-click="zafiro.showPropertyData(51, '105')">
 				<polyline id="F-L105" class="property pb-sprite-1" points="850.6,444 882.6,501.3 761.3,566.8 731.1,512.6 850.6,444 	" />
 				<text transform="matrix(0.4863 0.8738 -0.8738 0.4863 853.3175 469.3874)">
 					<tspan x="0" y="0" class="st1 st2 st8">9.5</tspan>
@@ -2874,7 +2874,7 @@
 				</text>
 				<text transform="matrix(0.866 -0.5 0.5 0.866 800.0284 502.1598)" class="st5 st6 st3">105</text>
 			</g>
-			<g id="F-106" class="property__active" ng-class="zafiro.inmovablesClassList[105]" ng-click="zafiro.showPropertyData(51, '107')">
+			<g id="F-106" class="property__active" ng-class="zafiro.inmovablesClassList[105]" ng-click="zafiro.showPropertyData(51, '106')">
 				<polyline id="F-L106" class="property pb-sprite-2"
 					points="763.6,571.1 761.3,566.8 882.6,501.3 913,559.6 790,621.8 763.6,571.1 	" />
 				<text transform="matrix(0.4618 0.887 -0.887 0.4618 884.5098 526.7878)">

@@ -163,20 +163,20 @@
 
 				<div class="p-20 grey lighten-5">
 					<div class="p-5">
-						<h6 class="futura-med">Portto Blanco {{zafiro.propertyData.condominium}}</h6>
+						<h6 class="futura-med">Portto Blanco Bernal {{ zafiro.propertyData.condominium }}</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light">Número {{zafiro.propertyData.number}}</h6>
+						<h6 class="futura-light">Número {{ zafiro.propertyData.number }}</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light">Área {{zafiro.propertyData.area}} M&sup2;</h6>
+						<h6 class="futura-light">Área {{ zafiro.propertyData.area }} M&sup2;</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light">Precio por M&sup2; ${{zafiro.propertyData.cost_m2}} MXN</h6>
+						<h6 class="futura-light">Precio por M&sup2; ${{ zafiro.propertyData.cost_m2 }} MXN</h6>
 					</div>
 					<div class="p-5">
 						<h6 class="futura-light green-text" style="text-decoration: line-through;">Precio de
-							${{zafiro.propertyData.total}} MXN</h6>
+							${{ zafiro.propertyData.total }} MXN</h6>
 					</div>
 
 					<div class="divider"></div>
@@ -188,27 +188,41 @@
 					<div class="divider"></div>
 
 					<div class="p-20">
-						<h6 class="deep-purple-text futura-light">{{zafiro.propertyData.discountPlan3}}% para
+						<h6 class="deep-purple-text futura-light">{{ zafiro.propertyData.discountPlan1 }}% para
 							propiedades pagadas de contado al 100%</h6>
-						<h6 class="green-text futura-light">Precio de ${{zafiro.propertyData.totalPlan3}} MXN</h6>
+						<h6 class="green-text futura-light">Precio de ${{ zafiro.propertyData.totalPlan1 }} MXN</h6>
 						<p class="promo__description grey-text">¡Oferta limitada!</p>
 					</div>
 
 					<div class="divider"></div>
 
 					<div class="p-20">
-						<h6 class="deep-purple-text futura-light">{{zafiro.propertyData.discountPlan1}}% de descuento
+						<h6 class="deep-purple-text futura-light">{{ zafiro.propertyData.discountPlan2 }}% de descuento
 							para propiedades con financiamiento hasta 180 Meses</h6>
-						<h6 class="green-text futura-light">Precio de ${{zafiro.propertyData.totalPlan1}} MXN</h6>
+						<h6 class="green-text futura-light">Precio de ${{ zafiro.propertyData.totalPlan2 }} MXN</h6>
 						<p class="promo__description grey-text">¡Oferta limitada!</p>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="divider"></div>
+
+					<div class="p-20">
+						<h6 class="deep-purple-text futura-light">Compra en {{ zafiro.month }} y paga la primera
+							mensualidad hasta Noviembre</h6>
+						<p class="promo__description grey-text">*Pagando el 100% de enganche</p>
+						<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas
+							en {{ zafiro.month + ' ' + zafiro.year }}</p>
 					</div>
 
 					<div class="divider"></div>
 
 					<a class="p-20">
 						<p class="blue-text futura-book">¡Apártalo ahora!</p>
-						<p class="green-text">Con tan solo $10,000 MXN</p>
+						<p class="green-text">Con tan solo $5,000 MXN</p>
 					</a>
+				</div>
+
 				</div>
 
 			</div>
@@ -875,7 +889,7 @@
 	<text transform="matrix(1.0782 0 0 1 1412.8091 784.3251)" class="st6" style="font-family:'FuturaBT-Book'; font-size:12px;">*PROYECTO SUJETO A CAMBIOS SIN PREVIO AVISO*</text>
 </g>
 <g id="BASE">
-	<image style="overflow:visible;" width="1366" height="806" xlink:href="media/assets/img/habitta/portto-blanco/app/devs/zafiro/condos/base-zafiro-2.jpg" >
+	<image style="overflow:visible;" width="1366" height="806" xlink:href="media/assets/img/habitta/portto-blanco/app/devs/zafiro/condos/zafiro_2.jpg" >
 	</image>
 </g>
 <g id="CONDO_2">

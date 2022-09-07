@@ -602,11 +602,7 @@ app.config(function($routeProvider) {
 		controllerAs: 'tamul'
 	})
 
-	
-	/***** Tamul *****/
 	/***** Zafiro *****/
-
-	/* Quote */
 
 	.when('/Portto_Blanco-Bernal/Zafiro', {
 		templateUrl: 'application/views/habitta/portto-blanco/app/devs/zafiro/zafiro_quote.php',
@@ -623,9 +619,28 @@ app.config(function($routeProvider) {
 		controller: 'PBBZafiroQuoteCtrl',
 		controllerAs: 'zafiro'
 	})
-
-
 	
+	
+	/***** Amatista *****/
+
+	.when('/Portto_Blanco-Bernal/Amatista', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/amatista/amatista_quote.php',
+		controller: 'PBBAmatistaQuoteCtrl',
+		controllerAs: 'amatista'
+	})
+	.when('/Portto_Blanco-Bernal/Amatista_1', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/amatista/condos/amatista_1_quote.php',
+		controller: 'PBBAmatistaQuoteCtrl',
+		controllerAs: 'amatista'
+	})
+	.when('/Portto_Blanco-Bernal/Amatista_2', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/amatista/condos/amatista_2_quote.php',
+		controller: 'PBBAmatistaQuoteCtrl',
+		controllerAs: 'amatista'
+	})
+	
+
+
 	.when('/veredas_lira', {
 		templateUrl: 'application/views/habitta/veredas-lira/home/home_view.php'
 	})
@@ -11437,6 +11452,9 @@ app.controller('PBSLPTamulQuoteCtrl', function($scope, Inmovables, Moment) {
 
 });
 
+
+
+// Lanzamiento de Zafiro   10  de Septiembre 2022
 app.controller('PBBZafiroQuoteCtrl', function($scope, Inmovables, Moment) {
 	
 	let zafiro = this;
@@ -11489,7 +11507,6 @@ app.controller('PBBZafiroQuoteCtrl', function($scope, Inmovables, Moment) {
 
 						zafiro.propertyData.type = inmovablesData.propertyTypes[indexType].type;
 						zafiro.propertyData.cost_m2 = inmovablesData.propertyTypes[indexType].cost_m2;
-	
 						break;
 	
 					}
@@ -11510,6 +11527,7 @@ app.controller('PBBZafiroQuoteCtrl', function($scope, Inmovables, Moment) {
 				let totalDiscountPlan2 = total - (total * discountPlan2);
 				zafiro.propertyData.discountPlan2 = discountPlan2 * 100;
 				zafiro.propertyData.totalPlan2 = totalDiscountPlan2.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+			
 				zafiro.openDialog();
 
 			}
@@ -11532,10 +11550,112 @@ app.controller('PBBZafiroQuoteCtrl', function($scope, Inmovables, Moment) {
 			zafiro.inmovablesClassList = Inmovables.generateInmovablesClassList(inmovablesData.inmovables);
 		});
 	}
+
 	init();
 
 });
 
+/********** lanzamiento AMatista 10 septiembre 2022 **********/
+
+app.controller('PBBAmatistaQuoteCtrl', function($scope, Inmovables, Moment) {
+	
+	let amatista = this;
+
+	amatista.month = Moment.month();
+	amatista.nextMonth = Moment.nextMonth();
+	amatista.year = Moment.year();
+	
+	let inmovablesData = [];
+	amatista.inmovablesClassList = [];
+	amatista.propertyData = [];
+
+	amatista.dialogDisplay = 'hide';
+
+	let discountPlan1 = .25;
+	let discountPlan2 = .20;
+
+	amatista.showPropertyData = function(idCondominium, number) {
+
+		angular.forEach(inmovablesData.inmovables, function(row, key) {
+
+			if (row.number == number && row.idCondominium == idCondominium) {
+
+				for (let indexCondos = 0; indexCondos < inmovablesData.condos.length; indexCondos++) {
+
+					if (inmovablesData.inmovables[key].idCondominium == inmovablesData.condos[indexCondos].idCondominium) {
+
+						amatista.propertyData.condominium = inmovablesData.condos[indexCondos].condominium;
+	
+						break;
+	
+					}
+	
+				}
+
+				if (row.property_class == 1) {
+					amatista.propertyData.propertyClass = 'Nave industrial';
+					amatista.costToBlock = '$30,000 MXN';
+				} else if (row.property_class == 2) {
+					amatista.propertyData.propertyClass = 'Lote industrial';
+					amatista.costToBlock = '$10,000 MXN';
+				} else {
+					amatista.propertyData.propertyClass = 'Lote habitacional';
+					amatista.costToBlock = '$10,000 MXN';
+				}
+				
+				for (let indexType = 0; indexType < inmovablesData.propertyTypes.length; indexType++) {
+
+					if (inmovablesData.inmovables[key].idPropertyType == inmovablesData.propertyTypes[indexType].idPropertyType) {
+
+						amatista.propertyData.type = inmovablesData.propertyTypes[indexType].type;
+						amatista.propertyData.cost_m2 = inmovablesData.propertyTypes[indexType].cost_m2;
+						break;
+	
+					}
+	
+				}
+
+				if (inmovablesData.inmovables[key].cost_m2_increase != null) {
+					amatista.propertyData.cost_m2 += amatista.propertyData.cost_m2 * inmovablesData.inmovables[key].cost_m2_increase.value;
+				}
+
+				amatista.propertyData.number = row.number;
+				amatista.propertyData.area = row.area;
+				let total = amatista.propertyData.cost_m2 * amatista.propertyData.area;
+				amatista.propertyData.total = total.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+				let totalDiscountPlan1 = total - (total * discountPlan1);
+				amatista.propertyData.discountPlan1 = discountPlan1 * 100;
+				amatista.propertyData.totalPlan1 = totalDiscountPlan1.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+				let totalDiscountPlan2 = total - (total * discountPlan2);
+				amatista.propertyData.discountPlan2 = discountPlan2 * 100;
+				amatista.propertyData.totalPlan2 = totalDiscountPlan2.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+			
+				amatista.openDialog();
+
+			}
+
+		});
+
+	}
+
+	amatista.openDialog = function() {
+		amatista.dialogDisplay = '';
+	}
+
+	amatista.closeDialog = function() {
+		amatista.dialogDisplay = 'hide';
+	}
+
+	let init = function() {
+		Inmovables.getInmovablesData(12, 22).then(function(response) {
+			inmovablesData = response;
+			amatista.inmovablesClassList = Inmovables.generateInmovablesClassList(inmovablesData.inmovables);
+		});
+	}
+
+	init();
+
+});
 
 
 /********** Menu **********/
