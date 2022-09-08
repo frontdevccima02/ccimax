@@ -11623,7 +11623,12 @@ app.controller('PBBAmatistaQuoteCtrl', function($scope, Inmovables, Moment) {
 				amatista.propertyData.area = row.area;
 				let total = amatista.propertyData.cost_m2 * amatista.propertyData.area;
 				amatista.propertyData.total = total.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+
 				let totalDiscountPlan1 = total - (total * discountPlan1);
+				if (key == 21) {
+					totalDiscountPlan1 = totalDiscountPlan1 + 0.01
+				}
+
 				amatista.propertyData.discountPlan1 = discountPlan1 * 100;
 				amatista.propertyData.totalPlan1 = totalDiscountPlan1.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
 				let totalDiscountPlan2 = total - (total * discountPlan2);
