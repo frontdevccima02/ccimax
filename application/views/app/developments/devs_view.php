@@ -282,19 +282,24 @@
 	
 											<md-menu-item>
 												<span class="gray-txt">
-													Portto Blanco - SLP
+													PB Bernal
 												</span>
 											</md-menu-item>
 	
 											<md-menu-divider></md-menu-divider>
 
 											<md-menu-item>
-												<md-button href="#!/inventary/layouts/Tamúl">
-													Tamúl
+												<md-button href="#!/inventary/layouts/amatista">
+													Amatista
+												</md-button>
+											</md-menu-item>
+											<md-menu-item>
+												<md-button href="#!/inventary/layouts/zafiro">
+													Zafiro
 												</md-button>
 											</md-menu-item>
 
-											<md-menu-divider></md-menu-divider>
+											<!-- <md-menu-divider></md-menu-divider>
 	
 											<md-menu-item>
 												<span class="gray-txt">
@@ -317,7 +322,7 @@
 											</md-menu-item>
 
 											<md-menu-divider></md-menu-divider>
-	
+	 -->
 											<md-menu-item>
 												<md-button>
 													Cerrar menu

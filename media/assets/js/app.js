@@ -231,6 +231,20 @@ app.config(function($routeProvider) {
 		controllerAs: 'inventary'
 	})
 
+	.when('/inventary/bernal/amatista', {
+		templateUrl: 'application/views/app/inventary/habitta/portto-blanco/amatista/amatista.html',
+		controller: 'LayoutCtrl',
+		controllerAs: 'inventary'
+	})
+
+	
+	.when('/inventary/bernal/zafiro', {
+		templateUrl: 'application/views/app/inventary/habitta/portto-blanco/zafiro/zafiro.html',
+		controller: 'LayoutCtrl',
+		controllerAs: 'inventary'
+	})
+
+
 	/******************** 
 	 * Habitta 
 	********************/
@@ -602,6 +616,10 @@ app.config(function($routeProvider) {
 		controllerAs: 'tamul'
 	})
 
+	.when('/Portto_Blanco-Bernal', {
+		templateUrl: 'application/views/habitta/portto-blanco/home/bernal_view.php',
+	})
+	
 	/***** Zafiro *****/
 
 	.when('/Portto_Blanco-Bernal/Zafiro', {
@@ -837,6 +855,27 @@ app.config(function($routeProvider) {
 		controller: 'NvtCeltaQuoteCtrl',
 		controllerAs: 'nvtCelta'
 	})
+
+	
+
+	/***** CALAMANDA*****/
+	/* Inventary */
+
+	.when('/Navetec-Calamanda_Business_Park-Inventary', {
+		templateUrl: 'application/views/navetec/inventary/celta_inventary_view.php',
+		controller: 'NvtCeltaCtrl',
+		controllerAs: 'nvtCelta'
+	})
+
+	/* Quote */
+
+	.when('/Navetec-Calamanda_Business_Park', {
+		templateUrl: 'application/views/navetec/quote/calamanda_quote_view.php',
+		controller: 'NvtCalamandaQuoteCtrl',
+		controllerAs: 'nvtCalamanda'
+	})
+
+
 	
 	/***** La Presa *****/
 
@@ -8414,6 +8453,122 @@ app.controller('NvtCeltaQuoteCtrl', function($scope, Inmovables, Developments, S
 	init();
 
 });
+
+
+/***** CALAMANDA  08 SEPTIEMBRE 22*****/
+app.controller('NvtCalamandaQuoteCtrl', function($scope, Inmovables, Developments, Status) {
+
+	var nvtCalamanda = this;
+	var inmovables = Inmovables;
+	
+	var inmovablesData = [];
+	nvtCalamanda.inmovablesClassList = [];
+	nvtCalamanda.propertyData = [];
+
+	nvtCalamanda.dialogDisplay = 'hide';
+
+	var discountPlan1 = .25;
+	var discountPlan2 = .20;
+
+	nvtCalamanda.showPropertyData = function(idCondominium, number, idProperty) {
+		
+		Developments.selectPropertyById(idProperty).then(function(response) {
+
+			if (Status.checkHttpStatusCode(response.status)) {
+
+				nvtCalamanda.property = response.property;
+				nvtCalamanda.property.sample = {};
+
+				nvtCalamanda.property.sample.m2 = (nvtCalamanda.property.cost.increase.m2 > 0) ? nvtCalamanda.property.cost.increase.m2 : nvtCalamanda.property.cost.m2;
+				nvtCalamanda.property.sample.property = nvtCalamanda.property.sample.m2 * nvtCalamanda.property.area;
+
+				nvtCalamanda.property.sample.discount1 = nvtCalamanda.property.sample.property - (nvtCalamanda.property.sample.property * discountPlan1);
+				nvtCalamanda.property.sample.discount2 = nvtCalamanda.property.sample.property - (nvtCalamanda.property.sample.property * discountPlan2);
+
+				angular.forEach(inmovablesData.inmovables, function(row, key) {
+					if (row.number == number && row.idCondominium == idCondominium) {
+						nvtCalamanda.propertyData.condominium = inmovablesData.condos[0].condominium;
+						if (row.property_class == 1) {
+							nvtCalamanda.propertyData.propertyClass = 'Nave industrial';
+							nvtCalamanda.costToBlock = '$30,000 MXN';
+						} else if (row.property_class == 2) {
+							nvtCalamanda.propertyData.propertyClass = 'Lote industrial';
+							nvtCalamanda.costToBlock = '$10,000 MXN';
+						} else {
+							nvtCalamanda.propertyData.propertyClass = 'Lote habitacional';
+							nvtCalamanda.costToBlock = '$10,000 MXN';
+						}
+		
+						for (let indexType = 0; indexType < inmovablesData.propertyTypes.length; indexType++) {
+		
+							if (inmovablesData.inmovables[key].idPropertyType == inmovablesData.propertyTypes[indexType].idPropertyType) {
+		
+								nvtCalamanda.propertyData.type = inmovablesData.propertyTypes[indexType].type;
+								nvtCalamanda.propertyData.cost_m2 = Number.parseFloat(inmovablesData.propertyTypes[indexType].cost_m2.toFixed(2));
+		
+								break;
+		
+							}
+		
+						}
+		
+						if (row.cost_m2_increase != null) {
+							nvtCalamanda.propertyData.cost_m2 = nvtCalamanda.property.cost.increase.m2;
+							nvtCalamanda.propertyData.cost_m2 = Number.parseFloat(nvtCalamanda.propertyData.cost_m2.toFixed(2));
+						}
+		
+						nvtCalamanda.propertyData.number = row.number;
+						nvtCalamanda.propertyData.area = row.area;
+						var total = nvtCalamanda.propertyData.cost_m2 * nvtCalamanda.propertyData.area;
+						nvtCalamanda.propertyData.total = total.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+						var totalDiscountPlan1 = total - (total * discountPlan1);
+						nvtCalamanda.propertyData.discountPlan1 = discountPlan1 * 100;
+						nvtCalamanda.propertyData.totalPlan1 = totalDiscountPlan1.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+						var totalDiscountPlan2 = total - (total * discountPlan2);
+						nvtCalamanda.propertyData.discountPlan2 = discountPlan2 * 100;
+						nvtCalamanda.propertyData.totalPlan2 = totalDiscountPlan2.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+						nvtCalamanda.openDialog();
+					}
+				});
+
+			} else {
+
+				alert('No se encontro información sobre esta propiedad');
+
+			}
+
+		}, function(response) {
+
+			alert('Revisa tu conexión a internet o contacta a un administrador');
+
+		});
+	}
+
+	nvtCalamanda.openDialog = function() {
+		nvtCalamanda.dialogDisplay = '';
+	}
+
+	nvtCalamanda.closeDialog = function() {
+		nvtCalamanda.dialogDisplay = 'hide';
+	}
+
+	var init = function() {
+
+		Inmovables.getInmovablesData(13, 23).then(function(response) {
+
+			inmovablesData = response;
+			nvtCalamanda.inmovables = response.inmovables;
+			console.log(response.inmovables)
+			nvtCalamanda.inmovablesClassList = inmovables.generateInmovablesClassList(inmovablesData.inmovables);
+
+		});
+	}
+	init();
+
+});
+
+
+
 
 /********** Habitta **********/
 

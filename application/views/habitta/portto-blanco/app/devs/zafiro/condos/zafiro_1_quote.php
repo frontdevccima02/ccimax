@@ -75,7 +75,7 @@
 			<div class="nav-wrapper">
 
 				<a href="#!/portto_blanco" class="brand-logo white left"><img class="logo-pb"
-						src="media/assets/img/habitta/portto-blanco/logos/logo.svg"></a>
+						src="media/assets/img/habitta/portto-blanco/logos/logo_bernal.svg"></a>
 
 				<ul class="nav-menu hide-on-med-and-down">
 					<li><a href="#!/portto_blanco">Inicio</a></li>

@@ -84,9 +84,9 @@
                     <img class="pb__logo" src="media/assets/img/habitta/portto-blanco/logos/lomas_pb_logo.svg">
                 </a>
                 <div class="p-40"></div>
-                <!--a href="#!/portto_blancoslp">
-                    <img class="pb__logo" src="media/assets/img/habitta/portto-blanco/pb_slp_logo.svg">
-                </a-->
+                <a href="#!/Portto_Blanco-Bernal">
+                    <img class="pb__logo" src="media/assets/img/habitta/portto-blanco/logos/logo_bernal.svg">
+                </a>
                 <div class="p-40"></div>
                 <!--a href="#!/veredas_lira">
                     <img class="vl__logo" src="media/assets/img/habitta/veredas-lira/logos/logo.svg">
