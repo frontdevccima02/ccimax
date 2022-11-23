@@ -637,7 +637,24 @@ app.config(function($routeProvider) {
 		controller: 'PBBZafiroQuoteCtrl',
 		controllerAs: 'zafiro'
 	})
-	
+
+	/***** Malaquita *****/
+    .when('/Portto_Blanco-Bernal/Malaquita', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/malaquita/malaquita_quote.php',
+		controller: 'PBBMalaquitaQuoteCtrl',
+		controllerAs: 'malaquita'
+	})
+	.when('/Portto_Blanco-Bernal/Malaquita_1', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/malaquita/condos/malaquita_1_quote.php',
+		controller: 'PBBMalaquitaQuoteCtrl',
+		controllerAs: 'malaquita'
+	})
+	.when('/Portto_Blanco-Bernal/Malaquita_2', {
+		templateUrl: 'application/views/habitta/portto-blanco/app/devs/malaquita/condos/malaquita_2_quote.php',
+		controller: 'PBBMalaquitaQuoteCtrl',
+		controllerAs: 'malaquita'
+	})
+
 	
 	/***** Amatista *****/
 
@@ -11817,6 +11834,112 @@ app.controller('PBBAmatistaQuoteCtrl', function($scope, Inmovables, Moment) {
 
 });
 
+
+/********** lanzamiento MALAQUITA 24 noviembre 2022 **********/
+app.controller('PBBMalaquitaQuoteCtrl', function($scope, Inmovables, Moment) {
+	
+	let malaquita = this;
+
+	malaquita.month = Moment.month();
+	malaquita.nextMonth = Moment.nextMonth();
+	malaquita.year = Moment.year();
+	
+	let inmovablesData = [];
+	malaquita.inmovablesClassList = [];
+	malaquita.propertyData = [];
+
+	malaquita.dialogDisplay = 'hide';
+
+	let discountPlan1 = .25;
+	let discountPlan2 = .20;
+
+	malaquita.showPropertyData = function(idCondominium, number) {
+
+		angular.forEach(inmovablesData.inmovables, function(row, key) {
+
+			if (row.number == number && row.idCondominium == idCondominium) {
+
+				for (let indexCondos = 0; indexCondos < inmovablesData.condos.length; indexCondos++) {
+
+					if (inmovablesData.inmovables[key].idCondominium == inmovablesData.condos[indexCondos].idCondominium) {
+
+						malaquita.propertyData.condominium = inmovablesData.condos[indexCondos].condominium;
+	
+						break;
+	
+					}
+	
+				}
+
+				if (row.property_class == 1) {
+					malaquita.propertyData.propertyClass = 'Nave industrial';
+					malaquita.costToBlock = '$30,000 MXN';
+				} else if (row.property_class == 2) {
+					malaquita.propertyData.propertyClass = 'Lote industrial';
+					malaquita.costToBlock = '$10,000 MXN';
+				} else {
+					malaquita.propertyData.propertyClass = 'Lote habitacional';
+					malaquita.costToBlock = '$10,000 MXN';
+				}
+				
+				for (let indexType = 0; indexType < inmovablesData.propertyTypes.length; indexType++) {
+
+					if (inmovablesData.inmovables[key].idPropertyType == inmovablesData.propertyTypes[indexType].idPropertyType) {
+
+						malaquita.propertyData.type = inmovablesData.propertyTypes[indexType].type;
+						malaquita.propertyData.cost_m2 = inmovablesData.propertyTypes[indexType].cost_m2;
+						break;
+	
+					}
+	
+				}
+
+				if (inmovablesData.inmovables[key].cost_m2_increase != null) {
+					malaquita.propertyData.cost_m2 += malaquita.propertyData.cost_m2 * inmovablesData.inmovables[key].cost_m2_increase.value;
+				}
+
+				malaquita.propertyData.number = row.number;
+				malaquita.propertyData.area = row.area;
+				let total = malaquita.propertyData.cost_m2 * malaquita.propertyData.area;
+				malaquita.propertyData.total = total.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+
+				let totalDiscountPlan1 = total - (total * discountPlan1);
+				if (key == 21) {
+					totalDiscountPlan1 = totalDiscountPlan1 + 0.01
+				}
+
+				malaquita.propertyData.discountPlan1 = discountPlan1 * 100;
+				malaquita.propertyData.totalPlan1 = totalDiscountPlan1.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+				let totalDiscountPlan2 = total - (total * discountPlan2);
+				malaquita.propertyData.discountPlan2 = discountPlan2 * 100;
+				malaquita.propertyData.totalPlan2 = totalDiscountPlan2.toLocaleString(undefined, {minimumFractionDigits: 2,'maximumFractionDigits':2});
+			
+				malaquita.openDialog();
+
+			}
+
+		});
+
+	}
+
+	malaquita.openDialog = function() {
+		malaquita.dialogDisplay = '';
+	}
+
+	malaquita.closeDialog = function() {
+		malaquita.dialogDisplay = 'hide';
+	}
+
+	let init = function() {
+		Inmovables.getInmovablesData(12, 24).then(function(response) {
+			inmovablesData = response;
+			malaquita.inmovablesClassList = Inmovables.generateInmovablesClassList(inmovablesData.inmovables);
+		});
+	}
+
+	init();
+
+});
 
 /********** Menu **********/
 
