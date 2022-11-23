@@ -3,7 +3,7 @@
    const mins = document.getElementById("mins");
    const seconds = document.getElementById("seconds");
 
-   const lanzamiento = '21 may 2022 12:00:00';  
+   const lanzamiento = '24 nov 2022 09:00:00';  
 
    
    function countTimer(){
