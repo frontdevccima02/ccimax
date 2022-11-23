@@ -286,6 +286,7 @@
             .st15{font-size:5.3274px;}
             .st16{fill:none;stroke:#1C2044;stroke-width:4.15;stroke-miterlimit:10;}
             .st17{fill:#002856}
+            .st18{fill:none}
         </style>
             <g id="MACHOTE">
             </g>
@@ -769,11 +770,22 @@
                 </g>
                 <path class="st16" d="M10.8,201.5C7.9,135.9,4.9,70.3,2,4.7C449.7,3,896.7,3,1344.5,1.3c6.8,165.5,14.3,329.2,21.1,494.7
                     c-446.8,0-893.5,0-1340.3,0c-3.5-66.5-7-133-10.4-199.5"/>
-                <polygon class="st17" points="1345.84 1.38 1365.77 495.88 459.16 495.83 458.17 4.48 1345.84 1.38" /><text
-                class="st1" transform="translate(844.66 259.62)">E<tspan class="cls-19" x="19.5" y="0">T</tspan>
-                <tspan class="cls-20" x="34.67" y="0">A</tspan>
-                <tspan class="cls-21" x="60.25" y="0">P</tspan>
-                <tspan class="cls-20" x="77.8" y="0">A 2</tspan>
+                    <g>
+                        <polygon class="st17" points="1344.6,1.3 1364.6,495.8 920.7,495.7 919.7,4.4 "/>
+                        <g>
+                            <rect x="1035.8" y="215.6" class="st18" width="185.7" height="46.2"/>
+                            <text transform="matrix(1 0 0 1 1052.491 255.187)" class="st1 st5 st23">ETAPA III </text>
+                        </g>
+                        <g>
+                            <rect x="552.1" y="215.6" class="st18" width="185.7" height="46.2"/>
+                            <text transform="matrix(1 0 0 1 569.5344 255.187)" class="st1 st5 st23">ETAPA II </text>
+                        </g>
+                        <g>
+                            <rect x="141.3" y="215.6" class="st18" width="185.7" height="46.2"/>
+                            <text transform="matrix(1 0 0 1 161.5502 255.187)" class="st1 st5 st23">ETAPA I </text>
+                        </g>
+                    </g>
+                </g>
             </text>
             </g>
             </svg>
