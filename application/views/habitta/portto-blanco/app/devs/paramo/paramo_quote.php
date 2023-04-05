@@ -156,7 +156,7 @@
 	.st1{enable-background:new    ;}
 	.st2{fill:#FFFFFF;}
 </style>
-<image style="overflow:visible;enable-background:new    ;" width="5464" height="7084" xlink:href="media/assets/img/habitta/portto-blanco/app/devs/paramo/paramo.jpg"  transform="matrix(0.25 0 0 0.25 -1.6667 3.1667)">
+<image style="overflow:visible;enable-background:new;" width="5464" height="7084" xlink:href="media/assets/img/habitta/portto-blanco/app/devs/paramo/paramo.jpg"  transform="matrix(0.25 0 0 0.25 -1.6667 3.1667)">
 </image>
 <g id="paramo_1">
 	<a href="#!/Portto_Blanco-Paramo_1" class="pb__condo">

@@ -26,31 +26,39 @@
 
 <body ng-controller="NvtGammaDosQuoteCtrl as nvtGammaDos">
 	
-	<md-sidenav class="cc-sidenav md-sidenav-left md-whiteframe-4dp" md-component-id="left">
+	
+    	<!--Menu actualizado 19-DIC-2022 -->
+    <md-sidenav class="cc-sidenav md-sidenav-left md-whiteframe-4dp" md-component-id="left">
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">BUSINESS PARK</h1>
         </md-toolbar>
-        <a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
+        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
+            <div class="link-body link-nav">
+                Aeropuerto Business Park
+            </div>
+        </a>
+		<md-divider></md-divider>
+		<a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Beta Business Park
             </div>
         </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Gamma Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
+		<md-divider></md-divider>
+    <a href="#!/Navetec-Calamanda_Business_Park" ng-click="close()">
+        <div class="link-body link-nav">
+            Calamanda Business Park
+        </div>
+    </a>
+    <md-divider></md-divider>
+		<a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Celta Business Park
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                Santa Rosa Business Park
+                Gamma I Business Park
             </div>
         </a>
         <md-divider></md-divider>
@@ -60,23 +68,23 @@
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Aeropuerto Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Pedro Escobedo Business Park
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-SLP_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                San Luis Potosí
+                Santa Rosa Business Park
             </div>
         </a>
+		<md-divider></md-divider>
+		    <a href="#!/Navetec-Sur_57_Business_Park" ng-click="close()">
+                <div class="link-body link-nav">
+                    Sur 57 Business Park
+                </div>
+            </a>
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">NAVIGATION</h1>
         </md-toolbar>
@@ -93,6 +101,7 @@
         </a>
         <md-divider></md-divider>
     </md-sidenav>
+	<!--Menu Fin 19-DIC-2022 -->
 
     <div ng-controller="sideNavCtrl" class="navbar-fixed">
         <nav class="cc-nav white" role="navigation">
@@ -250,7 +259,7 @@
 			</div>
 		</div>
 
-        <svg version="1.1" id="quote__map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 1366 920" style="enable-background:new 0 0 1366 920;" xml:space="preserve">
         <style type="text/css">
             .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#3575B1;}
@@ -289,7 +298,7 @@
                 <g>
                     <text transform="matrix(1 0 0 1 1107.2006 744.4773)"><tspan x="0" y="0" class="mustard__fill futura-book fs__13px">NAVE</tspan><tspan x="8" y="14.8" class="mustard__fill futura-book fs__13px">1G</tspan></text>
                 </g>
-                <text transform="matrix(0.9992 0 0 1 1105.0775 773.4382)"><tspan x="0" y="0" class="white__fill futura-light fs__9px">638.16</tspan><tspan x="22.3" y="0" class="st1 st2 st7"> m2</tspan></text>
+                <text transform="matrix(0.9992 0 0 1 1105.0775 773.4382)"><tspan x="0" y="0" class="white__fill futura-light fs__9px">638.16</tspan><tspan x="22.3" y="0" class="st1 futura-light fs__9px"> m2</tspan></text>
                 <g>
                     <polyline class="st8" points="1125.1,688.2 1117,680 1125.1,671.8 1125.1,688.2 			"/>
                     <polyline class="st9" points="1125.1,671.8 1133.3,680 1125.1,688.2 1125.1,671.8 			"/>
@@ -304,12 +313,13 @@
                 <g>
                     <text transform="matrix(1 0 0 1 1032.1039 744.4773)"><tspan x="0" y="0" class="mustard__fill futura-book fs__13px">NAVE</tspan><tspan x="8" y="14.8" class="mustard__fill futura-book fs__13px">2G</tspan></text>
                 </g>
-                <text transform="matrix(0.9992 0 0 1 1029.9808 773.4382)"><tspan x="0" y="0" class="st1 st2 st7">549.22</tspan><tspan x="22.3" y="0" class="st1 st2 st7"> m2</tspan></text>
+                <text transform="matrix(0.9992 0 0 1 1029.9808 773.4382)"><tspan x="0" y="0" class="st1 futura-light fs__9px">549.22 &nbsp;&nbsp;</tspan><tspan x="22.3" y="0" class="st1 futura-book futura-light fs__9px"> m2</tspan></text>
                 <g>
                     <polyline class="st8" points="1050.3,688.2 1042.1,680 1050.3,671.8 1050.3,688.2"/>
                     <polyline class="st9" points="1050.3,671.8 1058.5,680 1050.3,688.2 1050.3,671.8"/>
                 </g>
             </g>
+            
             <g ng-class="nvtGammaDos.inmovablesClassList[2]" ng-click="nvtGammaDos.showPropertyData(14, '3G', nvtGammaDos.inmovables[2].idProperty)">
                 <rect id="G_N03_1_" x="950.5" y="656.7" class="property pb-sprite-1" width="66.4" height="186.5"/>
                 <text transform="matrix(1.0008 0 0 1 976.1928 665.1658)" class="white__fill futura-light fs__9px">14.00</text>
@@ -318,7 +328,7 @@
                 <g>
                     <text transform="matrix(1 0 0 1 967.5766 744.4773)"><tspan x="0" y="0" class="mustard__fill futura-book fs__13px">NAVE</tspan><tspan x="8" y="14.8" class="mustard__fill futura-book fs__13px">3G</tspan></text>
                 </g>
-                <text transform="matrix(0.9992 0 0 1 965.4536 773.4382)"><tspan x="0" y="0" class="white__fill futura-light fs__9px">549.22</tspan><tspan x="22.3" y="0" class="white__fill futura-light fs__9px"> m2</tspan></text>
+                <text transform="matrix(0.9992 0 0 1 965.4536 773.4382)"><tspan x="0" y="0" class="white__fill futura-light fs__9px">549.22 &nbsp;&nbsp; </tspan><tspan x="22.3" y="0" class="white__fill futura-light fs__9px">     m2</tspan></text>
             </g>
             <g ng-class="nvtGammaDos.inmovablesClassList[3]" ng-click="nvtGammaDos.showPropertyData(14, '4G', nvtGammaDos.inmovables[3].idProperty)">
                 <rect id="G_N04_1_" x="883.9" y="656.7" class="property pb-sprite-2" width="66.7" height="186.5"/>
@@ -328,14 +338,14 @@
                 <g>
                     <text transform="matrix(1 0 0 1 900.8559 744.4773)"><tspan x="0" y="0" class="mustard__fill futura-book fs__13px">NAVE</tspan><tspan x="8" y="14.8" class="mustard__fill futura-book fs__13px">4G</tspan></text>
                 </g>
-                <text transform="matrix(0.9992 0 0 1 898.7328 773.4382)"><tspan x="0" y="0" class="white__fill futura-light fs__9px">549.22</tspan><tspan x="22.3" y="0" class="white__fill futura-light fs__9px"> m2</tspan></text>
+                <text transform="matrix(0.9992 0 0 1 898.7328 773.4382)"><tspan x="0" y="0" class="white__fill futura-light fs__9px">549.22  </tspan><tspan x="22.3" y="0" class="white__fill futura-light fs__9px">    m2</tspan></text>
             </g>
             <g ng-class="nvtGammaDos.inmovablesClassList[4]" ng-click="nvtGammaDos.showPropertyData(14, '5G', nvtGammaDos.inmovables[4].idProperty)">
                 <rect id="G_N05_1_" x="817.4" y="656.7" class="property pb-sprite-1" width="66.4" height="186.5"/>
                 <text transform="matrix(1.0008 0 0 1 842.7495 665.1658)" class="white__fill futura-light fs__9px">14.00</text>
                 <text transform="matrix(1.0008 0 0 1 842.7495 837.8552)" class="white__fill futura-light fs__9px">14.00</text>
                 <text transform="matrix(0 -1.0008 1 0 879.7827 764.8494)" class="white__fill futura-light fs__9px">39.23</text>
-                <g>
+                <g> 
                     <text transform="matrix(1 0 0 1 834.1352 744.4773)"><tspan x="0" y="0" class="mustard__fill futura-book fs__13px">NAVE</tspan><tspan x="8" y="14.8" class="mustard__fill futura-book fs__13px">5G</tspan></text>
                 </g>
                 <text transform="matrix(0.9992 0 0 1 832.0121 773.4382)"><tspan x="0" y="0" class="white__fill futura-light fs__9px">549.22</tspan><tspan x="22.3" y="0" class="white__fill futura-light fs__9px"> m2</tspan></text>

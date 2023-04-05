@@ -72,7 +72,7 @@
 
 			<div class="nav-wrapper">
 
-				<a href="#!/portto_blanco" class="brand-logo white left"><img class="logo-pb" src="media/assets/img/habitta/portto-blanco/logos/logo.svg"></a>
+				<a href="#!/portto_blanco" class="brand-logo white left"><img class="logo-pb" src="media/assets/img/habitta/portto-blanco/logos/logo_bernal.svg"></a>
 
 				<ul class="nav-menu hide-on-med-and-down">
 					<li><a href="#!/portto_blanco">Inicio</a></li>
@@ -144,7 +144,7 @@
 		<div class="container mt-64">
 			<div class="row quote-header">
 				<div class="col s12">
-					<h1 class="center-align">ZAFIRO</h1>
+					<h1 class="center-align">AMATISTA</h1>
 				</div>
 			</div>
 		</div>
@@ -774,7 +774,7 @@
 				</image>
 				<a href="#!/Portto_Blanco-Bernal/Amatista_2" class="pb__condo">
 					<g>
-						<path class="pb__condo-bg" d="M996.1,675.3c-30.3,31.3-64.7,64-103.4,97.2c-44.6,38.1-87.9,70.5-128.3,98.2c-59.8-0.6-119.5-1.2-179.3-1.8
+						<path class="pb__condo-bg"d="M996.1,675.3c-30.3,31.3-64.7,64-103.4,97.2c-44.6,38.1-87.9,70.5-128.3,98.2c-59.8-0.6-119.5-1.2-179.3-1.8
 							C391,859.4,196.8,849.8,2.7,840.3c91.5-137.6,183-275.1,274.5-412.7c303.1,0.2,606.2,0.4,909.3,0.5
 							c-18.2,30.5-39.3,62.8-63.4,96.2c-25.5,35.2-51,66.8-75.5,94.8L996.1,675.3z"/>
 						<g>
@@ -803,5 +803,6 @@
 			</g>
 			</svg>
 	</div>
+
 </body>
 </html>

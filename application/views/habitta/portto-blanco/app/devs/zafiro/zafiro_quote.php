@@ -72,7 +72,7 @@
 
 			<div class="nav-wrapper">
 
-				<a href="#!/portto_blanco" class="brand-logo white left"><img class="logo-pb" src="media/assets/img/habitta/portto-blanco/logos/logo.svg"></a>
+				<a href="#!/portto_blanco" class="brand-logo white left"><img class="logo-pb" src="media/assets/img/habitta/portto-blanco/logos/logo_bernal.svg"></a>
 
 				<ul class="nav-menu hide-on-med-and-down">
 					<li><a href="#!/portto_blanco">Inicio</a></li>
@@ -185,11 +185,10 @@
 							<text transform="matrix(1 0 0 1 501.974 1659.6071)" class="st2 st3 st4">ZAFIRO 2</text>
 						</g>
 					</g>
+
 				</a>
 			</g>
-		</svg>
-
+			</svg>
 	</div>
 </body>
 </html>
-		

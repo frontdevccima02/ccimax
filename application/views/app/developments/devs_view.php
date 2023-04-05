@@ -166,7 +166,17 @@
 													Beta
 												</md-button>
 											</md-menu-item>
-	
+	                                        <md-menu-item>
+												<md-button href="#!/Navetec-Beta_Business_Park-Inventary">
+													Beta Completo
+												</md-button>
+											</md-menu-item>
+											<md-menu-item>
+												<md-button href="#!/inventary/layouts/Calamanda">
+													Calamanda
+												</md-button>
+											</md-menu-item>
+											
 											<md-menu-item>
 												<md-button href="#!/inventary/layouts/Gamma">
 													Gamma
@@ -212,6 +222,11 @@
 											<md-menu-item>
 												<md-button href="#!/inventary/layouts/celta">
 													Celta
+												</md-button>
+											</md-menu-item>
+											<md-menu-item>
+												<md-button href="#!/inventary/layouts/sur">
+													Sur 57
 												</md-button>
 											</md-menu-item>
 
@@ -263,7 +278,12 @@
 											
 											<md-menu-item>
 												<md-button href="#!/inventary/layouts/lago%201">
-													Lago
+													Lago 1
+												</md-button>
+											</md-menu-item>
+											<md-menu-item>
+												<md-button href="#!/inventary/layouts/lago%202">
+													Lago 2
 												</md-button>
 											</md-menu-item>
 											<md-menu-item>
@@ -279,7 +299,7 @@
 											</md-menu-item>
 											
 											<md-menu-divider></md-menu-divider>
-	
+											
 											<md-menu-item>
 												<span class="gray-txt">
 													PB Bernal
@@ -298,31 +318,36 @@
 													Zafiro
 												</md-button>
 											</md-menu-item>
-
-											<!-- <md-menu-divider></md-menu-divider>
-	
 											<md-menu-item>
-												<span class="gray-txt">
-													Veredas de Lira - Pedro Escobedo
-												</span>
-											</md-menu-item>
-	
-											<md-menu-divider></md-menu-divider>
-
-											<md-menu-item>
-												<md-button href="#!/inventary/layouts/Sabino">
-													Sabino
+												<md-button href="#!/inventary/layouts/malaquita">
+													Malaquita
 												</md-button>
 											</md-menu-item>
 
-											<md-menu-item>
-												<md-button href="#!/inventary/layouts/Cedro">
-													Cedro
-												</md-button>
-											</md-menu-item>
+											<!--<md-menu-divider></md-menu-divider>-->
+	
+											<!--<md-menu-item>-->
+											<!--	<span class="gray-txt">-->
+											<!--		Veredas de Lira - Pedro Escobedo-->
+											<!--	</span>-->
+											<!--</md-menu-item>-->
+	
+											<!--<md-menu-divider></md-menu-divider>-->
+
+											<!--<md-menu-item>-->
+											<!--	<md-button href="#!/inventary/layouts/Sabino">-->
+											<!--		Sabino-->
+											<!--	</md-button>-->
+											<!--</md-menu-item>-->
+
+											<!--<md-menu-item>-->
+											<!--	<md-button href="#!/inventary/layouts/Cedro">-->
+											<!--		Cedro-->
+											<!--	</md-button>-->
+											<!--</md-menu-item>-->
 
 											<md-menu-divider></md-menu-divider>
-	 -->
+	
 											<md-menu-item>
 												<md-button>
 													Cerrar menu

@@ -101,6 +101,11 @@
                                         <span>Zafiro</span>
                                     </div>
                                 </a>
+                                <a href="#!/Portto_Blanco-Bernal/Malaquita" ng-click="close()">
+                                    <div class="link-sidenav">
+                                        <span>Malaquita</span>
+                                    </div>
+                                </a>
                                 <md-menu-divider></md-menu-divider>
                             </md-menu-content>
                         </md-menu>
@@ -132,6 +137,11 @@
 							<a href="#!/Portto_Blanco-Bernal/Zafiro" ng-click="close()">
                                 <div class="link-sidenav">
                                     <span>Zafiro</span>
+                                </div>
+                            </a>
+                            <a href="#!/Portto_Blanco-Bernal/Malaquita" ng-click="close()">
+                                <div class="link-sidenav">
+                                    <span>Malaquita</span>
                                 </div>
                             </a>
                         </md-menu-content>
@@ -235,8 +245,11 @@
                             c-8.7,2-20.1,0.8-20.1,0.8l-140.5,142.2l7.4,137.8l104.3,448L211.9,2150.1z"/>
                         
                     </a>
-                    <path class="pb__condo-bg" d="M544.9,2606.1l368-47.4l126.8-399.4l99.6-249.5l37.3-118.5l-470.8,133c0,0,27.1,175.4-11.3,346.7
-                        C648.3,2477.2,544.9,2606.1,544.9,2606.1z"/>
+                    <a href="#!/Portto_Blanco-Bernal/Malaquita" class="pb__condo">
+                        <path class="pb__condo-bg" d="M544.9,2606.1l368-47.4l126.8-399.4l99.6-249.5l37.3-118.5l-470.8,133c0,0,27.1,175.4-11.3,346.7
+                            C648.3,2477.2,544.9,2606.1,544.9,2606.1z"/>
+                    </a>
+                        
                     <path class="st3" d="M469.7,1437.7l415.4-24.6l-10.6-203.9L497,1232l2.6,54.9l-172.6,9.4v14.7c0,0,53.3,36.4,79.6,61.6
                         C431.6,1396.7,469.7,1437.7,469.7,1437.7z"/>
                     <path class="pb__condo-bg" d="M387.7,1239l487-30.8l463.8-26.9l7.4-565.9l-205.5-6c0,0-10.6-6.5-31.3-29.4c-7.6-8.3-29.4-34.1-29.4-34.1

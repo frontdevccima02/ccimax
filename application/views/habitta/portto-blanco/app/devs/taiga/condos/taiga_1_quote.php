@@ -140,7 +140,7 @@
 	</div>
 
 
-	<div class="modal-dialog" >
+	<div class="modal-dialog" ng-class="taiga.dialogDisplay">
 		<div class="backdrop-dialog" ng-click="taiga.closeDialog()"></div>
 		<div class="container-dialog p-20">
 			<div class="toolbar-dialog blue-txt">
@@ -155,19 +155,19 @@
 
 				<div class="p-20 grey lighten-5">
 					<div class="p-5">
-						<h6 class="futura-med">Portto Blanco Portto Blanco Lago 1 </h6>
+						<h6 class="futura-med">Portto Blanco {{taiga.propertyData.condominium}}</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light">Número 64</h6>
+						<h6 class="futura-light">Número {{taiga.propertyData.number}}</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light">Área 140 M&sup2;</h6>
+						<h6 class="futura-light">Área {{taiga.propertyData.area}} M&sup2;</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light">Precio por M&sup2; 5770.3 MXN</h6>
+						<h6 class="futura-light">Precio por M&sup2; $ {{taiga.propertyData.cost_m2}} MXN</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light green-text" style="text-decoration: line-through;">Precio de $807.842,00 MXN</h6>
+						<h6 class="futura-light green-text" style="text-decoration: line-through;">Precio de ${{taiga.propertyData.total}} MXN</h6>
 					</div>
 
 					<div class="divider"></div>
@@ -180,6 +180,7 @@
 
 					<div class="p-20">
 						<h6 class="deep-purple-text futura-light">25% para propiedades pagadas de contado al 100%</h6>
+						<!--<h6 class="green-text futura-light">Precio de ${{taiga.propertyData.totalPlan1}} MXN</h6>-->
 						<p class="promo__description grey-text">¡Oferta limitada!</p>
 					</div>
 					
@@ -187,7 +188,7 @@
 
 					<div class="p-20">
 						<h6 class="deep-purple-text futura-light">20% de descuento para propiedades con financiamiento hasta 60 Meses</h6>
-						
+						<!--<h6 class="green-text futura-light">Precio de ${{taiga.propertyData.totalPlan2}} MXN</h6>-->
 						<p class="promo__description grey-text">¡Oferta limitada!</p>
 					</div>
 					
@@ -200,10 +201,15 @@
 					</div>
 
 					<div class="divider"></div>
+						<div class="p-20">
+						<h6 class="deep-purple-text futura-light"> 5 años de financiamiento, con 24 meses sin intereses.</h6>
+						<p class="promo__description grey-text">¡Oferta limitada!</p>
+					</div>
+                    <div class="divider"></div>
 
 					<a class="p-20">
 						<p class="blue-text futura-book">¡Apártalo ahora!</p>
-						<p class="green-text">Con tan solo $10,000 MXN</p>
+						<p class="green-text">Con tan solo $5,000 MXN</p>
 						<a href="https://pay.billpocket.com/habitta" class="btn blue-bg no__shadow futura-bold">Apártar ahora</>
 					</a>
 				</div>
@@ -268,7 +274,7 @@
 			</div>
 		</div>
 
-		<svg version="1.1" class="quote__map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 			x="0px" y="0px" viewBox="0 0 1366 1076.3" style="enable-background:new 0 0 1366 1076.3;" xml:space="preserve">
 
 			<g>

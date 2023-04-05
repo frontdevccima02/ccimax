@@ -26,31 +26,39 @@
 
 <body ng-controller="NvtAeropuertoQuoteCtrl as nvtAeropuerto">
 	
-	<md-sidenav class="cc-sidenav md-sidenav-left md-whiteframe-4dp" md-component-id="left">
+	
+    	<!--Menu actualizado 19-DIC-2022 -->
+    <md-sidenav class="cc-sidenav md-sidenav-left md-whiteframe-4dp" md-component-id="left">
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">BUSINESS PARK</h1>
         </md-toolbar>
-        <a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
+        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
+            <div class="link-body link-nav">
+                Aeropuerto Business Park
+            </div>
+        </a>
+		<md-divider></md-divider>
+		<a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Beta Business Park
             </div>
         </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Gamma Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
+		<md-divider></md-divider>
+    <a href="#!/Navetec-Calamanda_Business_Park" ng-click="close()">
+        <div class="link-body link-nav">
+            Calamanda Business Park
+        </div>
+    </a>
+    <md-divider></md-divider>
+		<a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Celta Business Park
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                Santa Rosa Business Park
+                Gamma I Business Park
             </div>
         </a>
         <md-divider></md-divider>
@@ -60,23 +68,24 @@
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Aeropuerto Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Pedro Escobedo Business Park
             </div>
         </a>
-		<md-divider></md-divider>
-        <a href="#!/Navetec-SLP_Business_Park" ng-click="close()">
+        <md-divider></md-divider>
+		<a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                San Luis Potosí
+                Santa Rosa Business Park
             </div>
         </a>
+		<md-divider></md-divider>
+			<a href="#!/Navetec-Sur_57_Business_Park" ng-click="close()">
+            <div class="link-body link-nav">
+                Sur 57 Business Park
+            </div>
+        </a>
+		<md-divider></md-divider>
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">NAVIGATION</h1>
         </md-toolbar>
@@ -93,7 +102,8 @@
         </a>
         <md-divider></md-divider>
     </md-sidenav>
-
+	<!--Menu Fin 19-DIC-2022 -->
+	
     <div ng-controller="sideNavCtrl" class="navbar-fixed">
         <nav class="cc-nav white" role="navigation">
             <div class="nav-wrapper">
@@ -188,9 +198,9 @@
 				<div class="divider"></div>
 
 				<div class="p-20">
-					<h6 class="deep-purple-text futura-light">Compra en {{nvtAeropuerto.month}} y paga la primera mensualidad hasta {{nvtAeropuerto.nextMonth}}</h6>
+					<h6 class="deep-purple-text futura-light">Compra en Enero y paga la primera mensualidad hasta Febrero</h6>
 					<p class="promo__description grey-text">*Pagando el 100% de enganche</p>
-					<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas en {{nvtAeropuerto.month + ' ' + nvtAeropuerto.year}}</p>
+					<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas en Enero  2023</p>
 				</div>
 
 				<div class="divider"></div>
@@ -259,7 +269,7 @@
 			</div>
 		</div>
 
-		<svg version="1.1" class="quote__map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			viewBox="0 0 1366 1099" style="enable-background:new 0 0 1366 1099;" xml:space="preserve">
 			
 			<style type="text/css">

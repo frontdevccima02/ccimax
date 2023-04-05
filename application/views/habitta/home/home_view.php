@@ -39,17 +39,32 @@
             </div>
         </a>
         <md-divider></md-divider>
-        <!--a href="#!/Portto_Blanco-Tamul" ng-click="close()">
-            <div class="fs__16px futura-light darkgray__text px-16 py-9">
-                <span>Portto Blanco - San Luis Potosí <span class="fs__9px futura-book white__text green__bg px-6 py-4 border-r3">Nuevo</span></span>
+        
+        <div class="blue__bg p-12">
+            <span class="fs__18px white__text futura-book">Nuevo Desarrollos</span>
+        </div>
+        <div class="blue__bg p-12">
+            <span class="fs__20px white__text futura-book">Bernal</span>
+        </div>
+        <md-divider></md-divider>
+        <a href="#!/Portto_Blanco-Bernal/Amatista" ng-click="close()">
+            <div class="fs__16px futura-light darkgray__text px-16 py-9 ">
+                <span>Amatista</span>
             </div>
         </a>
-        <md-divider></md-divider -->
-        <!--a href="#!/veredas_lira" ng-click="close()">
-            <div class="fs__16px futura-light darkgray__text px-16 py-9">
-                <span>Veredas de Lira - Pedro Escobedo</span>
+        <md-divider></md-divider>
+        <a href="#!/Portto_Blanco-Bernal/Zafiro" ng-click="close()">
+            <div class="fs__16px futura-light darkgray__text px-16 py-9 ">
+                <span>Zafiro</span>
             </div>
-        </a-->
+        </a>
+        <md-divider></md-divider>
+        <a href="#!/Portto_Blanco-Bernal/Malaquita" ng-click="close()">
+            <div class="fs__16px futura-light darkgray__text px-16 py-9 ">
+                <span>Malaquita</span>
+            </div>
+        </a>
+        <md-divider></md-divider>
         <md-divider></md-divider>
         <div class="blue__bg p-12">
             <span class="fs__18px white__text futura-book">Navegación</span>

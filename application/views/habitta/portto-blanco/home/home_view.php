@@ -239,7 +239,12 @@
 								</md-menu-item>
 								<a href="#!/Portto_Blanco-Lago_1" ng-click="close()">
 									<div class="link-sidenav">
-										<span>Lago</span>
+										<span>Lago 1</span>
+									</div>
+								</a>
+								<a href="#!/Portto_Blanco-Lago_2" ng-click="close()">
+									<div class="link-sidenav">
+										<span>Lago 2</span>
 									</div>
 								</a>
 								<a href="#!/Portto_Blanco-Manglar" ng-click="close()">
@@ -248,7 +253,25 @@
 									</div>
 								</a>
 								<md-menu-divider></md-menu-divider>
-								
+								<md-button disabled="disabled">
+                                        BERNAL
+                                    </md-button>
+                                <md-menu-divider></md-menu-divider>
+                                <a href="#!/Portto_Blanco-Bernal/Amatista" ng-click="close()">
+									<div class="link-sidenav">
+										<span>Amatista</span>
+									</div>
+								</a>
+                                <a href="#!/Portto_Blanco-Bernal/Zafiro" ng-click="close()">
+									<div class="link-sidenav">
+										<span>Zafiro</span>
+									</div>
+								</a>
+								<a href="#!/Portto_Blanco-Bernal/Malaquita" ng-click="close()">
+									<div class="link-sidenav">
+										<span>Malaquita</span>
+									</div>
+								</a>
                             </md-menu-content>
                         </md-menu>
                     </li>
@@ -304,7 +327,12 @@
                             </md-menu-item>
                             <a href="#!/Portto_Blanco-Lago_1" ng-click="close()">
 								<div class="link-sidenav">
-									<span>Lago</span>
+									<span>Lago 1</span>
+								</div>
+							</a>
+							<a href="#!/Portto_Blanco-Lago_2" ng-click="close()">
+								<div class="link-sidenav">
+									<span>Lago 2</span>
 								</div>
 							</a>
 							<a href="#!/Portto_Blanco-Manglar" ng-click="close()">
@@ -312,7 +340,25 @@
 										<span>Manglar</span>
 									</div>
 								</a>
-                        
+                        <md-menu-divider></md-menu-divider>
+								<md-button disabled="disabled">
+                                        BERNAL
+                                    </md-button>
+                                <md-menu-divider></md-menu-divider>
+								<md-button disabled="disabled">
+                                        BERNAL
+                                    </md-button>
+                                <md-menu-divider></md-menu-divider>
+                                <a href="#!/Portto_Blanco-Bernal/Amatista" ng-click="close()">
+									<div class="link-sidenav">
+										<span>Amatista</span>
+									</div>
+								</a>
+                                <a href="#!/Portto_Blanco-Bernal/Zafiro" ng-click="close()">
+									<div class="link-sidenav">
+										<span>Zafiro</span>
+									</div>
+								</a>
                         </md-menu-content>
                     </md-menu>
                 </div>

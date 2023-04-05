@@ -75,7 +75,7 @@
 			<div class="nav-wrapper">
 
 				<a href="#!/portto_blanco" class="brand-logo white left"><img class="logo-pb"
-						src="media/assets/img/habitta/portto-blanco/logos/logo.svg"></a>
+						src="media/assets/img/habitta/portto-blanco/logos/logo_bernal.svg"></a>
 
 				<ul class="nav-menu hide-on-med-and-down">
 					<li><a href="#!/portto_blanco">Inicio</a></li>
@@ -206,7 +206,7 @@
 					<div class="divider"></div>
 					<div class="p-20">
 						<h6 class="deep-purple-text futura-light">Compra en {{ amatista.month }} y paga la primera
-							mensualidad hasta Noviembre</h6>
+							mensualidad hasta Abril</h6>
 						<p class="promo__description grey-text">*Pagando el 100% de enganche</p>
 						<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas
 							en {{ amatista.month + ' ' + amatista.year }}</p>
@@ -256,7 +256,7 @@
 		<div class="container mt-64">
 			<div class="row quote-header">
 				<div class="col s12">
-					<h1 class="center-align">amatista 2</h1>
+					<h1 class="center-align">Amatista 2</h1>
 					<div class="quote-description">
 						<p class="left">Cotiza facilmente con un solo Click</p>
 						<img class="quote-icon-tap mt-15 ml-10 left" src="media/assets/img/icons/tap.svg">
@@ -1365,6 +1365,7 @@
 				<polyline class="st22" points="901.1,384.6 905.6,389.1 901.1,393.7 901.1,384.6 				"/>
 			</g>
 		</g>
+		
 		<g id="B-49_1_" class="property__active" ng-class="amatista.inmovablesClassList[148]" ng-click="amatista.showPropertyData(54, '49')">
 			<polyline id="B-L49_1_" class="property pb-sprite-1" points="968.5,445.3 908.7,363.6 942.4,337.6 1006.1,415.4 987.4,430.5 968.5,445.3 			"/>
 			<text transform="matrix(0.5446 0.8387 -0.8387 0.5446 953.2591 386.1149)" class="st15 st16 st17">49</text>
@@ -1377,6 +1378,7 @@
 				<polyline class="st22" points="935.3,359.2 939.8,363.7 935.3,368.3 935.3,359.2 				"/>
 			</g>
 		</g>
+		
 		<g id="B-50_1_" class="property__active" ng-class="amatista.inmovablesClassList[149]" ng-click="amatista.showPropertyData(54, '50')">
 			<polyline id="B-L50_1_" class="property pb-sprite-2" points="942.4,337.6 975.5,310.8 1040.8,386.2 1006.1,415.4 942.4,337.6 			"/>
 			<text transform="matrix(0.5446 0.8387 -0.8387 0.5446 988.3275 359.2552)" class="st15 st16 st17">50</text>
@@ -1662,8 +1664,6 @@
 
 		</div>
 	</div>
-
-
 	</div>
 </body>
 

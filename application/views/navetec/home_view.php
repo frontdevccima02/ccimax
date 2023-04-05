@@ -33,31 +33,39 @@
         </video>
     </div-->
 
+    
+    	<!--Menu actualizado 19-DIC-2022 -->
     <md-sidenav class="cc-sidenav md-sidenav-left md-whiteframe-4dp" md-component-id="left">
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">BUSINESS PARK</h1>
         </md-toolbar>
-        <a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
+        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
+            <div class="link-body link-nav">
+                Aeropuerto Business Park
+            </div>
+        </a>
+		<md-divider></md-divider>
+		<a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Beta Business Park
             </div>
         </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Calamanda_Business_Park" ng-click="close()">
+		<md-divider></md-divider>
+    <a href="#!/Navetec-Calamanda_Business_Park" ng-click="close()">
+        <div class="link-body link-nav">
+            Calamanda Business Park
+        </div>
+    </a>
+    <md-divider></md-divider>
+		<a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                Calamanda Business Park
+                Celta Business Park
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                Gamma Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Santa Rosa Business Park
+                Gamma I Business Park
             </div>
         </a>
         <md-divider></md-divider>
@@ -67,31 +75,25 @@
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Aeropuerto Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Pedro Escobedo Business Park
             </div>
         </a>
         <md-divider></md-divider>
+		<a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
+            <div class="link-body link-nav">
+                Santa Rosa Business Park
+            </div>
+        </a>
+        <md-divider></md-divider>
+		<a href="#!/Navetec-Sur_57_Business_Park" ng-click="close()">
+            <div class="link-body link-nav">
+                Sur 57 Business Park
+            </div>
+        </a>
+		<md-divider></md-divider>
 
-        <md-divider></md-divider>
-        <a href="#!/Navetec-SLP_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                San Luis Potosí
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-               Celta
-            </div>
-        </a>
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">NAVIGATION</h1>
         </md-toolbar>
@@ -101,7 +103,6 @@
             </div>
         </a>
         <md-divider></md-divider>
-        
         <a href="#!/" ng-click="close()">
             <div class="link-body link-nav">
                 Grupo CCIMA
@@ -109,6 +110,7 @@
         </a>
         <md-divider></md-divider>
     </md-sidenav>
+	<!--Menu Fin 19-DIC-2022 -->
 
     <div ng-controller="sideNavCtrl" class="navbar-fixed">
         <nav class="cc-nav white" role="navigation">
@@ -125,7 +127,6 @@
         </nav>
     </div>
 
-    
     <header class="cc-header relative w100" style="overflow: hidden;">
         <img class="portada w100" src="media/assets/img/navetec/gamma/gamma.jpg">
         <div class="header-wrap absolute w100 h100">
@@ -226,9 +227,9 @@
                 <div class="col s12 m6 l3">
                     <div class="p-420">
                         <div class="nosotros-img-wrap center">
-                            <a><img src="media/assets/img/navetec/logos/serverSLP.svg" height="36"></a>
+                            <a><img src="media/assets/img/navetec/logos/sur_57_logo.png" height="36"></a>
                         </div>
-                        <p class="center-align">Conjunto industrial ubicado estratégicamente en una de las zonas con mayor plusvalía, En la Carretera Federal 57  km 178,  a 10 minutos del Parque Industrial Logistic.</p>
+                        <p class="center-align">Parque industrial ubicado en la carretera federal 57 Querétaro - México en el Km 191 el el Municipio de El Marqués</p>
                     </div>
                 </div>
 
@@ -236,22 +237,22 @@
         </div>
 
         <!-- SECCCION VR NAVETEC 08122020 -->
-        <section>
-            <div class="row pb-10">
-                <div class="col s12">
-                    <h4 class="center">Conoce tú Próxima Nave</h4>
-                </div>
-            </div>
-            <div style="margin: auto; text-align: center;">
-                <iframe style="width:90vw; height:80vh;" src="https://GrupoCCIMA.vr-360-tour.com/e/gcwBeQ6wg0s/e?hide_logo=true&hide_nadir=true&hidehotspotlabels=true&hidelive=true&initvars.autorotate.enabled=true&show_thumbnails=true" allowfullscreen allow="clipboard-write; microphone; camera; gyroscope; accelerometer"></iframe>
-            </div>
-        </section>
+        <!--<section>-->
+        <!--    <div class="row pb-10">-->
+        <!--        <div class="col s12">-->
+        <!--            <h4 class="center">Conoce tú Próxima Nave</h4>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div style="margin: auto; text-align: center;">-->
+        <!--        <iframe style="width:90vw; height:80vh;" src="https://GrupoCCIMA.vr-360-tour.com/e/gcwBeQ6wg0s/e?hide_logo=true&hide_nadir=true&hidehotspotlabels=true&hidelive=true&initvars.autorotate.enabled=true&show_thumbnails=true" allowfullscreen allow="clipboard-write; microphone; camera; gyroscope; accelerometer"></iframe>-->
+        <!--    </div>-->
+        <!--</section>-->
 
         <div class="nosotros-bg blue-grey lighten-5">
             <div id="counter" class="row py-80">
                 <div class="col s12 m6 l3">
                     <div class="p-420">
-                        <h2 class="center-align">+<span class="count" data-value="17">0</span></h2>
+                        <h2 class="center-align">+<span class="count" data-value="20">0</span></h2>
                         <p class="center-align">AÑOS DE EXPERIENCIA</p>
                     </div>
                 </div>

@@ -26,31 +26,39 @@
 
 <body ng-controller="NvtGammaQuoteCtrl as nvtGamma">
   
-	<md-sidenav class="cc-sidenav md-sidenav-left md-whiteframe-4dp" md-component-id="left">
+
+    	<!--Menu actualizado 19-DIC-2022 -->
+    <md-sidenav class="cc-sidenav md-sidenav-left md-whiteframe-4dp" md-component-id="left">
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">BUSINESS PARK</h1>
         </md-toolbar>
-        <a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
+        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
+            <div class="link-body link-nav">
+                Aeropuerto Business Park
+            </div>
+        </a>
+		<md-divider></md-divider>
+		<a href="#!/Navetec-Beta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Beta Business Park
             </div>
         </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Gamma Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
+		<md-divider></md-divider>
+    <a href="#!/Navetec-Calamanda_Business_Park" ng-click="close()">
+        <div class="link-body link-nav">
+            Calamanda Business Park
+        </div>
+    </a>
+    <md-divider></md-divider>
+		<a href="#!/Navetec-Celta_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Celta Business Park
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Gamma_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                Santa Rosa Business Park
+                Gamma I Business Park
             </div>
         </a>
         <md-divider></md-divider>
@@ -60,23 +68,23 @@
             </div>
         </a>
         <md-divider></md-divider>
-        <a href="#!/Navetec-Aeropuerto_Business_Park" ng-click="close()">
-            <div class="link-body link-nav">
-                Aeropuerto Business Park
-            </div>
-        </a>
-        <md-divider></md-divider>
-        <a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
+		<a href="#!/Navetec-Pedro_Escobedo_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
                 Pedro Escobedo Business Park
             </div>
         </a>
-		<md-divider></md-divider>
-        <a href="#!/Navetec-SLP_Business_Park" ng-click="close()">
+        <md-divider></md-divider>
+		<a href="#!/Navetec-Santa_Rosa_Business_Park" ng-click="close()">
             <div class="link-body link-nav">
-                San Luis Potosí
+                Santa Rosa Business Park
             </div>
         </a>
+		<md-divider></md-divider>
+		    <a href="#!/Navetec-Sur_57_Business_Park" ng-click="close()">
+                <div class="link-body link-nav">
+                    Sur 57 Business Park
+                </div>
+            </a>
         <md-toolbar class="md-hue-2">
             <h1 class="md-toolbar-tools">NAVIGATION</h1>
         </md-toolbar>
@@ -93,6 +101,7 @@
         </a>
         <md-divider></md-divider>
     </md-sidenav>
+	<!--Menu Fin 19-DIC-2022 -->
 
     <div ng-controller="sideNavCtrl" class="navbar-fixed">
         <nav class="cc-nav white" role="navigation">
@@ -205,7 +214,7 @@
 			</div>
     </div>
 
-		<svg version="1.1" class="quote__map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			viewBox="0 0 1366 907" style="enable-background:new 0 0 1366 907;" xml:space="preserve">
 
 			<style type="text/css">

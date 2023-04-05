@@ -3,12 +3,12 @@
    const mins = document.getElementById("mins");
    const seconds = document.getElementById("seconds");
 
-   const lanzamiento = '24 nov 2022 09:00:00';  
+   const lanzamiento = '07 mar 2023 10:00:00';  
 
    
    function countTimer(){
        const lanzamientoDate = new Date(lanzamiento);
-       const currentDate = new Date();
+       const currentDate = Date.now();
 
        const totalSeconds = (lanzamientoDate - currentDate) / 1000;
        const daysCalc =  Math.floor(totalSeconds / 3600 / 24);

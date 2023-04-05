@@ -220,7 +220,7 @@
 
 					<a class="p-20">
 						<p class="blue-text futura-book">¡Apártalo ahora!</p>
-						<p class="green-text">Con tan solo $10,000 MXN</p>
+						<p class="green-text">Con tan solo $5,000 MXN</p>
 						
 						</a>
 				</div>
@@ -286,7 +286,7 @@
 		</div>
 
 		<!-- contenedor-->
-		<svg version="1.1" class="quote__map" id="CONDO_BOSQUE_2" xmlns="http://www.w3.org/2000/svg"
+		<svg version="1.1" id="CONDO_BOSQUE_2" xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 2766.8"
 			style="enable-background:new 0 0 1366 2766.8;" xml:space="preserve">
 			<style type="text/css">

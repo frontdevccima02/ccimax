@@ -164,7 +164,7 @@
 						<h6 class="futura-light">Área {{desierto.propertyData.area}} M&sup2;</h6>
 					</div>
 					<div class="p-5">
-						<h6 class="futura-light">Precio por M&sup2; {{desierto.propertyData.cost_m2}} MXN</h6>
+						<h6 class="futura-light">Precio por M&sup2; $ {{desierto.propertyData.cost_m2}} MXN</h6>
 					</div>
 					<div class="p-5">
 						<h6 class="futura-light green-text" style="text-decoration: line-through;">Precio de ${{desierto.propertyData.total}} MXN</h6>
@@ -179,22 +179,26 @@
 					<div class="divider"></div>
 
 					<div class="p-20">
-						<h6 class="deep-purple-text futura-light">{{desierto.propertyData.discountPlan1}}% para propiedades pagadas de contado al 100%</h6>
-						<h6 class="green-text futura-light">Precio de ${{desierto.propertyData.totalPlan1}} MXN</h6>
+						<h6 class="deep-purple-text futura-light">25% para propiedades pagadas de contado al 100%</h6>
+						<!--<h6 class="green-text futura-light">Precio de ${{desierto.propertyData.totalPlan1}} MXN</h6>-->
 						<p class="promo__description grey-text">¡Oferta limitada!</p>
 					</div>
 					
 					<div class="divider"></div>
 
 					<div class="p-20">
-						<h6 class="deep-purple-text futura-light">{{desierto.propertyData.discountPlan2}}% de descuento para propiedades con financiamiento hasta 180 Meses</h6>
-						<h6 class="green-text futura-light">Precio de ${{desierto.propertyData.totalPlan2}} MXN</h6>
+						<h6 class="deep-purple-text futura-light">20% de descuento para propiedades con financiamiento hasta 60 Meses</h6>
+						<!--<h6 class="green-text futura-light">Precio de ${{desierto.propertyData.totalPlan2}} MXN</h6>-->
 						<p class="promo__description grey-text">¡Oferta limitada!</p>
 					</div>
 
 					<div class="divider"></div>
 
-					
+					<div class="divider"></div>
+						<div class="p-20">
+						<h6 class="deep-purple-text futura-light"> 5 años de financiamiento, con 24 meses sin intereses.</h6>
+						<p class="promo__description grey-text">¡Oferta limitada!</p>
+					</div>
 					
 					<div class="divider"></div>
 

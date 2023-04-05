@@ -148,7 +148,7 @@
 				</div>
 			</div>
 		</div>
-		<svg version="1.1" class="quote__map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			viewBox="0 0 1366 1990" style="enable-background:new 0 0 1366 1990;" xml:space="preserve">
 
 			<style type="text/css">

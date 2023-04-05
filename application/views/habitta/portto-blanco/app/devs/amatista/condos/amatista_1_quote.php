@@ -75,7 +75,7 @@
 			<div class="nav-wrapper">
 
 				<a href="#!/portto_blanco" class="brand-logo white left"><img class="logo-pb"
-						src="media/assets/img/habitta/portto-blanco/logos/logo.svg"></a>
+						src="media/assets/img/habitta/portto-blanco/logos/logo_bernal.svg"></a>
 
 				<ul class="nav-menu hide-on-med-and-down">
 					<li><a href="#!/portto_blanco">Inicio</a></li>
@@ -209,7 +209,7 @@
 
 					<div class="p-20">
 						<h6 class="deep-purple-text futura-light">Compra en {{ amatista.month }} y paga la primera
-							mensualidad hasta Noviembre</h6>
+							mensualidad hasta Abril</h6>
 						<p class="promo__description grey-text">*Pagando el 100% de enganche</p>
 						<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas
 							en {{ amatista.month + ' ' + amatista.year }}</p>
@@ -299,9 +299,9 @@
 	.st12{fill:#012856;}
 	.st13{fill:#07A4CC;}
 	.st14{fill-rule:evenodd;clip-rule:evenodd;fill:#4076AE;}
-	.st15{fill:#FFBF00;}
+	.st15{fill:#FFFFFF;}
 	.st16{font-family:'CenturyGothic-Bold';}
-	.st17{font-size:6.5523px;}
+	.st17{font-size:10.5523px;}
 	.st18{fill:#FFFFFF;}
 	.st19{font-family:'CenturyGothic';}
 	.st20{font-size:6.7344px;}

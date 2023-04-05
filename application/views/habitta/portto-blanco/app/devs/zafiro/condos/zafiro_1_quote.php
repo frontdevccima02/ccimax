@@ -209,7 +209,7 @@
 
 					<div class="p-20">
 						<h6 class="deep-purple-text futura-light">Compra en {{ zafiro.month }} y paga la primera
-							mensualidad hasta Noviembre</h6>
+							mensualidad hasta Abril</h6>
 						<p class="promo__description grey-text">*Pagando el 100% de enganche</p>
 						<p class="promo__description grey-text">*Aplica para todas las operaciones a crédito realizadas
 							en {{ zafiro.month + ' ' + zafiro.year }}</p>
